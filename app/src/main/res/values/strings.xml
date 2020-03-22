@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Nexus Clock</string>
+    <string name="app_name_dark">Nexus Clock Dark</string>
 </resources>

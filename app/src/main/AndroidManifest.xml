@@ -11,8 +11,8 @@
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
+        android:logo="@drawable/widget_icon"
         android:supportsRtl="true"
-        android:logo="@drawable/icon"
         tools:ignore="AllowBackup,MissingApplicationIcon">
 
         <receiver
@@ -26,6 +26,20 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget" />
+
+        </receiver>
+
+        <receiver
+            android:name=".ClockWidget2"
+            android:label="@string/app_name_dark">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget2" />
 
         </receiver>
     </application>

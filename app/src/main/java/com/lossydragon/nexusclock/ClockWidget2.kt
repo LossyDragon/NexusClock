@@ -10,18 +10,18 @@ import android.provider.AlarmClock
 import android.util.Log
 import android.widget.RemoteViews
 
-/* Class for the [Blue] Clock */
-class ClockWidget : AppWidgetProvider() {
+/* Class for the [Purple] Clock */
+class ClockWidget2 : AppWidgetProvider() {
 
     companion object {
-        private val TAG = ClockWidget::class.java.simpleName
+        private val TAG = ClockWidget2::class.java.simpleName
     }
 
     override fun onReceive(context: Context?, intent: Intent?) {
         super.onReceive(context, intent)
 
         if (intent!!.action == AppWidgetManager.ACTION_APPWIDGET_UPDATE) {
-            val views = RemoteViews(context!!.packageName, R.layout.widget)
+            val views = RemoteViews(context!!.packageName, R.layout.widget2)
 
             try {
                 if (getAlarmIntent(context) != null) {
